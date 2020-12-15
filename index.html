@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "icon" type = "image/png" href = "assets/img/logo.png">
-    <link rel="stylesheet" href="css/libs/font-awesome.css">
+    <link rel="stylesheet" href="css/libs/all.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" type="text/css" href="css/sketch.css">
@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 
-                <div class="arrow"><i class="fa fa-angle-double-down"></i></div>
+                <div class="arrow"><i class="fa fa-arrow-down"></i></div>
             </div>
         </section>
 
@@ -81,6 +81,7 @@
                         <li><i class="fa fa-caret-right"></i>JavaScript (ES6+)</li>
                         <li><i class="fa fa-caret-right"></i>Php 5 e 7</li>
                         <li><i class="fa fa-caret-right"></i>Nodejs</li>
+                        <li><i class="fa fa-caret-right"></i>Git & Github</li>
                         <li><i class="fa fa-caret-right"></i>mySQL</li>
                         <li><i class="fa fa-caret-right"></i>Json</li>
                         <li><i class="fa fa-caret-right"></i>Lefleat</li>
@@ -113,6 +114,7 @@
                                 <a class="image" href="http://sairessy.github.io/covid19"  target="_blank" id="0"></a>
                                 <a class="image" href="https://cheerful-river-snickerdoodle.glitch.me"  target="_blank" id="1"></a>
                                 <a class="image" href="https://sairessy-mystore-1.glitch.me"  target="_blank" id="2"></a>
+                                <a class="image" href="https://www.hitsmz.tk"  target="_blank" id="3"></a>
                             </div>
                         </div>
 
@@ -160,7 +162,7 @@
             <div class="contact">
                 <a href="#"><i class="fa fa-phone"></i>842572881/872081978</a>
                 <a href="#"><i class="fa fa-envelope"></i>sairessy@gmail.com</a>
-                <a href="https://github.com/sairessy" target="_blank"><i class="fa fa-github"></i>github.com/sairessy</a>
+                <a href="https://github.com/sairessy" target="_blank"><i class="fab fa-github"></i>github.com/sairessy</a>
             </div>
         </div>
     </footer>
@@ -174,35 +176,5 @@
     <script type="text/javascript" src="js/libs/p5.sound.js"></script>
     <script type="text/javascript" src="js/Ball.js"></script>
     <script type="text/javascript" src="js/sketch.js"></script> 
-
-    <script>
-
-        const appVersion = window.clientInformation.appVersion.split('/')[2].split(' ')[0];
-
-        class Analytics {
-            constructor() {
-                this.data = {
-                    ip: appVersion
-                };
-            }
-
-            send() {
-                const url = 'http://127.0.0.1:3000/analytics';
-                
-                $.ajax({
-                    url,
-                    method: 'POST',
-                    data: this.data,
-                    success: (data)=> {
-                        
-                    }
-                })
-            }
-        }
-
-        new Analytics().send();
-
-    </script>
-    
 </body>
 </html>

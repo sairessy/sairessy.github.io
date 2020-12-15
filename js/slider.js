@@ -1,6 +1,6 @@
 $(document).ready(()=> {
     let x = -100;
-    let w = 300;
+    let w = 400;
 
     $('.controller i:nth-child(2)').click(()=> { 
         if(x>-w) {

@@ -1,5 +1,5 @@
 @font-face {
-    src: url(../assets/fonts/Roboto-Regular.ttf);
+    src: url(../assets/fonts/RobotoMono-VariableFont_wght.ttf);
     font-family: roboto;
 }
 
@@ -246,8 +246,8 @@ section .title strong {
     background-image: url(../assets/img/me.png);
     background-blend-mode: luminosity;
     border-radius: var(--radius-1);
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 100%;
     border: 2px solid var(--myGreen);
 }
@@ -265,7 +265,7 @@ section .title strong {
 }
 
 .intro .arrow i {
-    font-size: 32px;
+    font-size: 16px;
     animation: anmArrow 3s infinite;
     color: var(--myGreen);
 }
@@ -350,7 +350,7 @@ section .title strong {
 }
 
 .gotop i {
-    font-size: 32px;
+    font-size: 16px;
 }
 
 /* FOOTER */
@@ -479,6 +479,9 @@ button {
     height: 40px;
     border-radius: 100%;
     outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #2bccb1;
     border: 1px solid #2bccb1;
     color: #000;
@@ -492,5 +495,5 @@ button:hover {
 }
 
 button i {
-    font-size: 32px;
+    font-size: 16px;
 }
