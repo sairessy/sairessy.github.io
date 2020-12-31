@@ -1,8 +1,8 @@
-let balls = [];
 const lm = ['Criar', 'Inovar', 'Optimizar'];
 
+let balls = [];
+
 let canvas,
-	img,
  	sound,
  	button,
  	slider,
@@ -10,7 +10,6 @@ let canvas,
  	vol = 0.09;
 
 function preload() {
-	img = loadImage('./assets/img/intro.svg');
 	sound = loadSound('assets/sound/sia_snowflake.mp3');
 }
 
@@ -45,13 +44,6 @@ function setup() {
 function draw() {
 	background("#111");
 	vol = slider.value();
-
-	push();
-	imageMode(CENTER);
-	scale(0.8);
-	translate(width*0.5, height*0.5)
-	image(img, 100, 0);
-	pop();
 
 	balls.forEach(ball=> {
 		ball.init();

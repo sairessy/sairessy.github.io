@@ -7,12 +7,14 @@
     position: relative;
     width: 80%;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 .container {
     width: 80%;
     margin: 10px auto;
-    height: 240px;
+    height: 300px;
     position: relative;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -20,7 +22,7 @@
 
 .images-container {
     position: absolute; 
-    width: 400%; 
+    width: 500%; 
     height: 300px;
     display: flex;
     cursor: pointer; 
@@ -33,6 +35,7 @@
     background-position: center center;
     background-size: contain;
     z-index: 6;
+    transition: transform .4s ease-in-out;
 }
 
 .image:nth-child(1) {
@@ -48,7 +51,11 @@
 } 
 
 .image:nth-child(4) {
-    background-image: url(../assets/img/ptoject3.png);
+    background-image: url(../assets/img/project3.png);
+}
+
+.image:nth-child(5) {
+    background-image: url(../assets/img/project4.png);
 } 
 
 /*  */
@@ -58,10 +65,13 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: auto;
+    height: fit-content;
     color:  var(--myGreen);
     top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .controller i {
@@ -70,7 +80,7 @@
     opacity: .6;
     transition: opacity .4s ease;
     z-index: 2;
-    background: rgba(24, 24, 24, 0.637);
+    background: #2bccb144;
     padding: 10px;
     display: flex;
     border-radius: 100%;
@@ -82,6 +92,10 @@
 
 .controller i:hover {
     opacity: 1;
+}
+
+.controller i:active {
+    opacity: .6;
 }
 
 .badge {

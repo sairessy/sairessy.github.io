@@ -37,7 +37,8 @@ body {
     border-radius: 5px;
     min-height: 100px;  
     text-shadow: 0 0 2px #000; 
-    background: rgba(0, 0, 0, .3);
+    background: #00000080;
+    margin: auto;
 }
 
 a {
@@ -191,6 +192,7 @@ section .title strong {
     z-index: 2;
     display: flex;
     flex-direction: column;
+    background: url(../assets/img/intro.svg) no-repeat center center/contain;
 }
 
 .intro * {
@@ -242,8 +244,8 @@ section .title strong {
     background: rgba(0, 0, 0, .6);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
-    background-image: url(../assets/img/me.png);
+    background-size: cover;
+    background-image: url(../assets/img/eu.png);
     background-blend-mode: luminosity;
     border-radius: var(--radius-1);
     width: 100px;
@@ -261,7 +263,7 @@ section .title strong {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, .3);
+    background: #000000ab;
 }
 
 .intro .arrow i {
@@ -332,8 +334,8 @@ section .title strong {
     100%{transform: skewX(-20deg);}
 }
 .gotop {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -342,10 +344,11 @@ section .title strong {
     right: 0;
     bottom: 0;
     margin: 10px;
-    border-radius: var(--primary-border);
+    border-radius: 100%;
     cursor: pointer;
     z-index: 3;
     transition: 0.5s all ease;
+    box-shadow: 0 0 4px 8px #111;
     transform: scale(0);
 }
 
@@ -356,7 +359,7 @@ section .title strong {
 /* FOOTER */
 
 footer {
-    /* background-image: url(../assets/img/always-grey.png); */
+    background-image: url(../assets/img/always-grey.png);
 }
 
 footer .footer {
@@ -495,5 +498,5 @@ button:hover {
 }
 
 button i {
-    font-size: 16px;
+    font-size: 12px;
 }
