@@ -1,6 +1,6 @@
 $(document).ready(()=> {
     let x = -100;
-    let w = 500;
+    let w = 700;
 
     $('.controller i:nth-child(2)').click(()=> { 
         $('.image').css({'transform': 'scale(0.6)'})
