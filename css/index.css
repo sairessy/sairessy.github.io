@@ -1,5 +1,5 @@
 @font-face {
-    src: url(../assets/fonts/RobotoMono-VariableFont_wght.ttf);
+    src: url(../assets/fonts/MontserratAlternates-Regular.ttf);
     font-family: roboto;
 }
 
@@ -49,7 +49,7 @@ a {
 
 /*  */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 12px;
 }
 
 ::-webkit-scrollbar-track {
@@ -158,7 +158,7 @@ section > .about, .exp, .fak {
     width: 60%;
     padding: 10px 0;
     margin: 20px auto;
-    border-top: 1px solid var(--primary-border);
+    border-top: 1px solid var(--myGreen);
     position: relative;
 }
 
@@ -167,7 +167,8 @@ section .title strong {
     padding: 10px 10px 10px 0;
     top: -18px;
     left: -10px;
-    background: var(--body-color);
+    background-color: var(--myGreen);
+    color: #fff;
     font-size: 16px;
     border: 1px solid #222;
     padding: 5px 10px;

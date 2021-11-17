@@ -22,7 +22,7 @@
 
 .images-container {
     position: absolute; 
-    width: 700%; 
+    width: 500%; 
     height: 300px;
     display: flex;
     cursor: pointer; 
@@ -36,35 +36,37 @@
     background-size: contain;
     z-index: 6;
     transition: transform .4s ease-in-out;
+    background-color: #fff;
+}
+
+.image span {
+    color: #000;
+    background-color: #2bccb1ab;
+    padding: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .image:nth-child(1) {
-    background-image: url(../assets/img/project0.png);
+    background-image: url(../assets/img/price.png);
 } 
 
 .image:nth-child(2) {
-    background-image: url(../assets/img/project1.png);
+    background-image: url(../assets/img/project6.png);
 } 
 
 .image:nth-child(3) {
-    background-image: url(../assets/img/project2.png);
+    background-image: url(../assets/img/systemstatus.png);
 } 
 
 .image:nth-child(4) {
-    background-image: url(../assets/img/project3.png);
+    background-image: url(../assets/img/cinemax.png);
 }
 
 .image:nth-child(5) {
-    background-image: url(../assets/img/project4.png);
-} 
+    background-image: url(../assets/img/Annotation2.png);
+}
 
-.image:nth-child(6) {
-  background-image: url(../assets/img/project5.png);
-} 
-
-.image:nth-child(7) {
-  background-image: url(../assets/img/project6.png);
-} 
 
 /*  */
 .controller {

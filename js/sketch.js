@@ -16,7 +16,7 @@ function preload() {
 function setup() {
 	canvas = createCanvas(innerWidth, innerHeight+100);
 	canvas.parent(document.querySelector('.sketch'));
-	button = createButton("<i class='fa fa-play'></i>");
+	button = createButton("<i class='la la-play'></i>");
 	button.position(width-100, height*0.5);
 
 	slider = createSlider(0, 1, vol, 0.01);
@@ -59,9 +59,9 @@ function draw() {
 function mp() {
     if(!sound.isPlaying()) {
         sound.play();
-        button.html("<i class='fa fa-stop'></i>");
+        button.html("<i class='la la-stop'></i>");
     } else {
         sound.stop();
-        button.html("<i class='fa fa-play'></i>");
+        button.html("<i class='la la-play'></i>");
     }
 }
