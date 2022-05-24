@@ -1,11 +1,16 @@
 @font-face {
     src: url(../assets/fonts/MontserratAlternates-Regular.ttf);
-    font-family: roboto;
+    font-family: mserrat_a_r;
 }
 
 @font-face {
     src: url(../assets/fonts/Montserrat-Regular.otf);
-    font-family: mserat;
+    font-family: mserrat_r;
+}
+
+@font-face {
+    src: url(../assets/fonts/ONEDAY.ttf);
+    font-family: o_day;
 }
 
 :root { 
@@ -26,19 +31,22 @@ body {
 }
 
 * {
-    font-family: roboto;
+    font-family: mserrat_a_r;
     font-size: 12px;
 }
 
 .intro p {
-    font-size: 16px; 
+    font-size: 12px; 
     line-height: 20px; 
     padding: 20px; 
     border-radius: 5px;
     min-height: 100px;  
     text-shadow: 0 0 2px #000; 
-    background: #00000080;
+    /* background: #00000080; */
+    height: 150px;
+    overflow-y: hidden;
     margin: auto;
+    
 }
 
 a {
@@ -46,18 +54,17 @@ a {
     color: var(--primary-black);
 }
 
-
 /*  */
 ::-webkit-scrollbar {
     width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #444;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #777;
+    background: #2bccb18f;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -89,8 +96,8 @@ a {
 .logo .icon-container {
     /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     padding: 2px; */
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background: url(../assets/img/logo.png) no-repeat center center/cover;
 }
 
@@ -116,7 +123,8 @@ a {
     font-weight: bold;
     text-transform: uppercase;
     color: #666;
-    font-family: mserat;
+    font-size: 22px;
+    font-family: o_day;
 }
 
 .me span:nth-child(2) {
@@ -172,7 +180,9 @@ section .title strong {
     font-size: 16px;
     border: 1px solid #222;
     padding: 5px 10px;
-    font-weight: normal;
+    border-radius: 5px;
+    font-family: mserrat_r;
+    font-weight: 100;
 }
   
 .section-intro {
@@ -216,22 +226,28 @@ section .title strong {
 }
 
 .intro .greetings {
-    font-size: 10px;
     color: #888;
+    margin-bottom: 20px;
+}
+
+.intro .greetings strong {
+    font-size: 32px;
+    font-family: o_day;
+    font-weight: 100;
 }
 
 .intro h1 {
-    font-size: 32px;
     margin: 0;
     color: #666;
 }
 
 .intro .name h1 {
-    font-size: 48px;
+    display: none;
 }
 
 .do {
     color: #ddd;
+    display: none;
 }
 
 .photo {
@@ -242,15 +258,15 @@ section .title strong {
 .intro .pic {
     padding: 12px 10px;
     outline: none;
-    background: rgba(0, 0, 0, .6);
+    background: #00000099;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-image: url(../assets/img/eu.png);
+    background-image: url(../assets/img/Pictures_Private__20220321_153551.JPG);
     background-blend-mode: luminosity;
     border-radius: var(--radius-1);
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
     border: 2px solid var(--myGreen);
 }
@@ -381,17 +397,18 @@ footer .footer {
     width: 100px;
     text-align: center;
     color: var(--primary-border );
-    font-weight: normal;
+    font-family: o_day;
 }
 
 .footer .contact {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: fit-content;
 }
 
 .footer .contact a {
+    flex: 1;
     padding: 10px;
     z-index: 2;
     display: flex;
@@ -407,7 +424,7 @@ footer .footer {
     margin: 20px 0;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     padding: 7px 12px;
-    background: rgba(0, 0, 0, 0.1);
+    background: #2bccb11a;
     display: block;
 }
 
@@ -449,7 +466,7 @@ footer .footer {
     }
 
     .intro .name h1 {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .intro h1 {

@@ -22,6 +22,7 @@ function setup() {
 	slider = createSlider(0, 1, vol, 0.01);
 	slider.position(width-135, height*0.5-100);
 	slider.style('cursor: pointer');
+	slider.style('accent-color: #2bccb1');
 	slider.style('transform: rotate(-90deg)');
 	slider.style('width: 100px');
 	slider.style('height: 6px');
