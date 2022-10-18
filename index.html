@@ -1,181 +1,268 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "icon" type = "image/png" href = "assets/img/logo.png">
-    <link rel="stylesheet" href="libraries/css/line-awesome.min.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/slider.css">
-    <link rel="stylesheet" type="text/css" href="css/sketch.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+    <link rel="stylesheet" href="libraries/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" type="text/css" href="css/sketch.css" />
     <script src="libraries/js/p5.js"></script>
     <script src="libraries/js/p5.sound.js"></script>
     <script src="libraries/js/jquery-3.6.0.min.js"></script>
     <script src="js/slider.js"></script>
     <title>Victorino, Sairesse</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header">
-            <div class="logo">
-                <a href="index.html">
-                    <div class="icon-container"><div class="icon">S.V.</div></div>
-                    <div class="me">
-                        <span>Sairesse Victorino</span>
-                        <span>Programador</span>
-                    </div>
-                </a>
-            
+      <div class="header">
+        <div class="logo">
+          <a href="index.html">
+            <div class="icon-container"><div class="icon">S.V.</div></div>
+            <div class="me">
+              <span>Sairesse Victorino</span>
+              <span>Programador</span>
             </div>
-            
-            <div class="nav">
-                <nav>
-                    <a href="#"><i class="la la-info"></i>Sobre</a>
-                    <a href="#"><i class="la la-gear"></i>Experiência</a>
-                    <a href="#"><i class="la la-graduation-cap"></i>Formação</a>
-                    <a href="#"><i class="la la-phone-alt"></i>Contacto</a>
-                </nav>
-            </div>
+          </a>
         </div>
 
-        <div class="sketch"></div>
-        
+        <div class="nav">
+          <nav>
+            <a href="#"><i class="la la-info"></i>Sobre</a>
+            <a href="#"><i class="la la-certificate"></i>Certificações</a>
+            <a href="#"><i class="la la-tools"></i>Experiência</a>
+            <a href="#"><i class="la la-project-diagram"></i>Projectos</a>
+            <a href="#"><i class="la la-graduation-cap"></i>Formação</a>
+            <a href="#"><i class="la la-phone-alt"></i>Contacto</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="sketch"></div>
     </header>
 
     <main>
-        <section class="section-intro">
-            <div class="intro">
-                <div class="intro-left-right">
-                    <div class="intro-left">
-                        <div class="greetings"><strong>Eu desenvolvo software!</strong></div>
-                        <div class="name"><h1>Sairesse Victorino</h1></div>
-                        <div class="do"><h1>Eu crio aplicações Web</h1></div>
-                        <p></p>
-                    </div>
-                    
-                    <div class="intro-right">
-                        <div class="photo"><div class="pic"></div></div>
-                    </div>
-                </div>
-                
-                <div class="arrow"><i class="la la-angle-down"></i></div>
+      <section class="section-intro">
+        <div class="intro">
+          <div class="intro-left-right">
+            <div class="intro-left">
+              <div class="greetings">
+                <strong>Eu desenvolvo software!</strong>
+              </div>
+              <div class="name"><h1>Sairesse Victorino</h1></div>
+              <div class="do"><h1>Eu crio aplicações Web</h1></div>
+              <p></p>
             </div>
-        </section>
 
-        <section>
-            <div class="about">
-                <div class="description">
-                    <div class="title"><strong>Sobre mim</strong></div>
-                    <p>Meu nome é <strong>Sairesse Victorino</strong> tenho
-                        <script>
-                            const age = new Date().getFullYear() - 1997;
-                            document.write(age);
-                        </script> anos, sou natural de Maputo e tenho
-                        um grande fascínuo pelo ramo da programação. <br>
-                        Tenho desenvolvido vários websites tanto front-end assim como back-end nos últimos 3 anos
-                    </p>
-    
-                    Tenho profunda experiência prática com as seguintes teconologias:
-                    <ul>
-                        <li><i class="la la-caret-right"></i>JavaScript (ES6+)</li>
-                        <li><i class="la la-caret-right"></i>jQuery</li>
-                        <li><i class="la la-caret-right"></i>Php 5 e 7</li>
-                        <li><i class="la la-caret-right"></i>mySQL</li>
-                        <li><i class="la la-caret-right"></i>Nodejs</li>
-                        <li><i class="la la-caret-right"></i>NeDB & MongoDB</li>
-                        <li><i class="la la-caret-right"></i>Git & Github</li>
-                        <li><i class="la la-caret-right"></i>React & React Native</li>
-                        <li><i class="la la-caret-right"></i>Electron</li>
-                        <li><i class="la la-caret-right"></i>Websocket's</li>
-                    </ul>
-                </div>
-    
-                <div class="profile-pic"></div>
+            <div class="intro-right">
+              <div class="photo"><div class="pic"></div></div>
             </div>
-        </section>
+          </div>
 
-        <section>
-            <div class="exp">
-                <div class="description">
-                    <div class="title"><strong>Experiência</strong></div>
-                    
-                    <p>Abaixo pode encontrar alguns exemplos práticos do meu trabalho:</p>
-                    
-                    <div class="slider-container">
-                        <div class="container">
-                            <div class="images-container">
-                                <a class="image" href="https://price-web.glitch.me"  target="_blank" id="0">
-                                    <span>HTML, CSS, JS, NODE, FIREBASE</span>
-                                </a>
-                                <a class="image" href="https://code-space.glitch.me"  target="_blank" id="1">
-                                    <span>HTML, CSS, JS, NODE, SOCKETIO</span>
-                                </a>
-                                <a class="image" href="https://systemstatus.glitch.me"  target="_blank" id="2">
-                                    <span>HTML, CSS, JS, NODE</span>
-                                </a>
-                                <a class="image" href="#"  target="_blank" id="3">
-                                    <span>ELECTRONJS</span>
-                                </a>
-                                <a class="image" href="https://awesome-app.glitch.me/aprova"  target="_blank" id="4">
-                                    <span>REACT NATIVE, FIREBASE</span>
-                                </a>
-                            </div>
-                        </div>
+          <div class="arrow"><i class="la la-angle-down"></i></div>
+        </div>
+      </section>
 
-                        <div class="controller">
-                            <i class="la la-angle-left" id="slide-lef"></i>
-                            <i class="la la-angle-right" id="slide-right"></i>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="profile-pic"></div>
+      <section>
+        <div class="about">
+          <div class="description">
+            <div class="title"><strong>Sobre mim</strong></div>
+            <p>
+              Meu nome é <strong>Sairesse Victorino</strong> tenho
+              <script>
+                const age = new Date().getFullYear() - 1997;
+                document.write(age);
+              </script>
+              anos, sou natural de Maputo e tenho um grande fascínuo pelo ramo
+              da programação. <br />
+              Tenho desenvolvido vários websites tanto front-end assim como
+              back-end nos últimos 4 anos
+            </p>
+
+            Tenho profunda experiência prática com as seguintes teconologias:
+            <ul>
+              <li><i class="la la-caret-right"></i>JavaScript (ES6+)</li>
+              <li><i class="la la-caret-right"></i>jQuery</li>
+              <li><i class="la la-caret-right"></i>Php 5 e 7</li>
+              <li><i class="la la-caret-right"></i>mySQL</li>
+              <li><i class="la la-caret-right"></i>Nodejs</li>
+              <li><i class="la la-caret-right"></i>MongoDB</li>
+              <li><i class="la la-caret-right"></i>Git & Github</li>
+              <li><i class="la la-caret-right"></i>React</li>
+              <li><i class="la la-caret-right"></i>React Native</li>
+              <li><i class="la la-caret-right"></i>Electron</li>
+              <li><i class="la la-caret-right"></i>Websocket's</li>
+            </ul>
+          </div>
+
+          <div class="profile-pic"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="exp">
+          <div class="description">
+            <div class="title"><strong>Certificações</strong></div>
+            <div style="display: flex; padding-top: 10px">
+              <a
+                style="margin-right: 10px"
+                href="https://www.freecodecamp.org/certification/sairessy/back-end-development-and-apis"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="assets/img/api-developer.png" width="100%" alt="" />
+              </a>
+              <a
+                href="https://www.freecodecamp.org/certification/sairessy/responsive-web-design"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="assets/img/web-designer.png" width="100%" alt="" />
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section>
-            <div class="fak">
-                <div class="description">
-                    
-                    <div class="title"><strong>Formação</strong></div>
-                    <p><i class="la la-caret-right"></i>2014-2016: Ensino Médio - Escola Secundária Francisco Manyanga
-                    </p>
-    
-                    <p><i class="la la-caret-right"></i>2016-2019: Licenciatura em Matemática Pura - Departamento de Matemática e Informática (UEM)
-                    </p>
+      <section>
+        <div class="exp">
+          <div class="description">
+            <div class="title"><strong>Experiência</strong></div>
+            <p>
+              <i class="la la-caret-right"></i>2021: Programador back end na
+              TABLU TECH
+            </p>
 
-                    <h2>Competências adquiridas</h2>
-                    <ul>
-                        <li><i class="la la-caret-right"></i>Conceitos de POO</li>
-                        <li><i class="la la-caret-right"></i>Estrutura de dados</li>
-                        <li><i class="la la-caret-right"></i>Boas práticas de programação</li>
-                        <li><i class="la la-caret-right"></i>Legibilidade de código/reaproveitamento</li>
-                        <li><i class="la la-caret-right"></i>Uso de base de dados </li>
-                    </ul>
+            <p>
+              <i class="la la-caret-right"></i>2022: Programador Full-Stack
+              (ExpressJS, SQL, ReactTJS) na NCSOFTWARE
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="exp">
+          <div class="description">
+            <div class="title"><strong>Projectos</strong></div>
+
+            <p>
+              Abaixo pode encontrar alguns exemplos práticos do meu trabalho:
+            </p>
+
+            <div class="slider-container">
+              <div class="container">
+                <div class="images-container">
+                  <a
+                    class="image"
+                    href="https://price-web.glitch.me"
+                    target="_blank"
+                    id="0"
+                  >
+                    <span>HTML, CSS, JS, NODE, FIREBASE</span>
+                  </a>
+                  <a
+                    class="image"
+                    href="https://code-space.glitch.me"
+                    target="_blank"
+                    id="1"
+                  >
+                    <span>HTML, CSS, JS, NODE, SOCKETIO</span>
+                  </a>
+                  <a
+                    class="image"
+                    href="https://systemstatus.glitch.me"
+                    target="_blank"
+                    id="2"
+                  >
+                    <span>HTML, CSS, JS, NODE</span>
+                  </a>
+                  <a class="image" href="#" target="_blank" id="3">
+                    <span>ELECTRONJS</span>
+                  </a>
+                  <a
+                    class="image"
+                    href="https://awesome-app.glitch.me/aprova"
+                    target="_blank"
+                    id="4"
+                  >
+                    <span>REACT NATIVE, FIREBASE</span>
+                  </a>
                 </div>
-            </div>
-        </section>
+              </div>
 
-        <div class="gotop"><i class="la la-angle-up"></i></div>
-        
+              <div class="controller">
+                <i class="la la-angle-left" id="slide-lef"></i>
+                <i class="la la-angle-right" id="slide-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-pic"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="fak">
+          <div class="description">
+            <div class="title"><strong>Formação</strong></div>
+            <p>
+              <i class="la la-caret-right"></i>2014-2016: Ensino Médio - Escola
+              Secundária Francisco Manyanga
+            </p>
+
+            <p>
+              <i class="la la-caret-right"></i>2016-2019: Licenciatura em
+              Matemática Pura - Departamento de Matemática e Informática (UEM)
+            </p>
+
+            <h2>Competências adquiridas</h2>
+            <ul>
+              <li><i class="la la-caret-right"></i>Conceitos de POO</li>
+              <li><i class="la la-caret-right"></i>Estrutura de dados</li>
+              <li>
+                <i class="la la-caret-right"></i>Boas práticas de programação
+              </li>
+              <li>
+                <i class="la la-caret-right"></i>Legibilidade de
+                código/reaproveitamento
+              </li>
+              <li><i class="la la-caret-right"></i>Uso de base de dados</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="gotop"><i class="la la-angle-up"></i></div>
     </main>
 
     <footer>
-        <div class="footer">
-            <div class="title"><strong>Contacto</strong></div>
-            <div class="contact">
-                <a href="https://wa.me/+258872081978"><i class="la la-whatsapp"></i>+258 872 081 978</a>
-                <a href="#"><i class="la la-envelope"></i>sairessy@gmail.com</a>
-                <a href="https://github.com/sairessy" target="_blank"><i class="la la-github"></i>Github</a>
-		<a href="https://www.linkedin.com/in/sairesse-victorino-1a661b181/" target="_blank"><i class="la la-linkedin"></i>Linkedin</a>
-            </div>
+      <div class="footer">
+        <div class="title"><strong>Contacto</strong></div>
+        <div class="contact">
+          <a href="https://wa.me/+258872081978"
+            ><i class="la la-phone"></i>(+258) 872081978 / 847460853</a
+          >
+          <a href="#"><i class="la la-envelope"></i>sairessy@gmail.com</a>
+          <a href="https://www.freecodecamp.org/sairessy" target="_blank"
+            ><i class="la la-free-code-camp"></i>freeCodeCamp</a
+          >
+          <a href="https://github.com/sairessy" target="_blank"
+            ><i class="la la-github"></i>Github</a
+          >
+          <a
+            href="https://www.linkedin.com/in/sairesse-victorino-1a661b181/"
+            target="_blank"
+            ><i class="la la-linkedin"></i>Linkedin</a
+          >
         </div>
+      </div>
     </footer>
 
-    
     <script src="js/index.js"></script>
     <script src="js/cats.js"></script>
     <script type="text/javascript" src="js/Ball.js"></script>
-    <script type="text/javascript" src="js/sketch.js"></script> 
-</body>
+    <script type="text/javascript" src="js/sketch.js"></script>
+  </body>
 </html>

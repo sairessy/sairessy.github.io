@@ -32,11 +32,11 @@ body {
 
 * {
     font-family: mserrat_a_r;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .intro p {
-    font-size: 12px; 
+    font-size: 14px; 
     line-height: 20px; 
     padding: 20px; 
     border-radius: 5px;
@@ -172,7 +172,7 @@ section > .about, .exp, .fak {
 
 section .title strong {
     position: absolute;
-    padding: 10px 10px 10px 0;
+    padding: 15px 10px 15px 0;
     top: -18px;
     left: -10px;
     background-color: var(--myGreen);
@@ -180,7 +180,7 @@ section .title strong {
     font-size: 16px;
     border: 1px solid #222;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 0px;
     font-family: mserrat_r;
     font-weight: 100;
 }
@@ -273,9 +273,9 @@ section .title strong {
 
 .intro .arrow {
     margin: 20px auto;
-    width: 40px;
-    height: 40px;
-    border-radius: 2px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -351,8 +351,8 @@ section .title strong {
     100%{transform: skewX(-20deg);}
 }
 .gotop {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -398,6 +398,7 @@ footer .footer {
     text-align: center;
     color: var(--primary-border );
     font-family: o_day;
+    display: none;
 }
 
 .footer .contact {
