@@ -1,68 +1,68 @@
-const lm = ['Criar', 'Inovar', 'Optimizar'];
+const lm = ["Criar", "Inovar", "Optimizar"];
 
 let balls = [];
 
 let canvas,
- 	sound,
- 	button,
- 	slider,
- 	span,
- 	vol = 0.09;
+  sound,
+  button,
+  slider,
+  span,
+  vol = 0.09;
 
 function preload() {
-	sound = loadSound('assets/sound/sia_snowflake.mp3');
+  sound = loadSound("assets/sound/sia_snowflake.mp3");
 }
 
 function setup() {
-	canvas = createCanvas(innerWidth, innerHeight+100);
-	canvas.parent(document.querySelector('.sketch'));
-	button = createButton("<i class='la la-play'></i>");
-	button.position(width-100, height*0.5);
+  canvas = createCanvas(innerWidth, innerHeight + 100);
+  canvas.parent(document.querySelector(".sketch"));
+  button = createButton("<i class='la la-play'></i>");
+  button.position(width - 100, height * 0.5);
 
-	slider = createSlider(0, 1, vol, 0.01);
-	slider.position(width-135, height*0.5-100);
-	slider.style('cursor: pointer');
-	slider.style('accent-color: #2bccb1');
-	slider.style('transform: rotate(-90deg)');
-	slider.style('width: 100px');
-	slider.style('height: 6px');
+  slider = createSlider(0, 1, vol, 0.01);
+  slider.position(width - 135, height * 0.5 - 100);
+  slider.style("cursor: pointer");
+  slider.style("accent-color: #2bccb1");
+  slider.style("transform: rotate(-90deg)");
+  slider.style("width: 100px");
+  slider.style("height: 6px");
 
-	span = createSpan("Sia - Snowflake");
-	span.position(width-130, height*0.5+100);
-	span.style('color: #2bccb1');
-	span.style('transform: rotate(90deg)');
+  span = createSpan("Sia - Snowflake");
+  span.position(width - 135, height * 0.5 + 100);
+  span.style("color: #2bccb1");
+  span.style("transform: rotate(90deg)");
 
-	sound.setLoop(true);
-	sound.setVolume(vol);
+  sound.setLoop(true);
+  sound.setVolume(vol);
 
-	button.mousePressed(mp);
+  button.mousePressed(mp);
 
-	for (var i = 0; i < 20; i++) {
-		balls.push(new Ball(random(0, width), random(-500, -100)));
-	}; 
-}	
+  for (var i = 0; i < 20; i++) {
+    balls.push(new Ball(random(0, width), random(-500, -100)));
+  }
+}
 
 function draw() {
-	background("#111");
-	vol = slider.value();
+  background("#111");
+  vol = slider.value();
 
-	balls.forEach(ball=> {
-		ball.init();
-	});
+  balls.forEach((ball) => {
+    ball.init();
+  });
 
-	sound.setVolume(vol);
+  sound.setVolume(vol);
 
-	fill('#2bccb1');
-	textSize(16);
-	text(round(vol*100)+'%', width-95, height*0.5-200);
-} 
+  fill("#2bccb1");
+  textSize(16);
+  text(round(vol * 100) + "%", width - 95, height * 0.5 - 200);
+}
 
 function mp() {
-    if(!sound.isPlaying()) {
-        sound.play();
-        button.html("<i class='la la-stop'></i>");
-    } else {
-        sound.stop();
-        button.html("<i class='la la-play'></i>");
-    }
+  if (!sound.isPlaying()) {
+    sound.play();
+    button.html("<i class='la la-stop'></i>");
+  } else {
+    sound.stop();
+    button.html("<i class='la la-play'></i>");
+  }
 }

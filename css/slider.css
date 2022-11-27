@@ -22,7 +22,7 @@
 
 .images-container {
     position: absolute; 
-    width: 500%; 
+    width: 300%; 
     height: 300px;
     display: flex;
     cursor: pointer; 
@@ -40,33 +40,25 @@
 }
 
 .image span {
-    color: #000;
-    background-color: #2bccb1ab;
+    color: #fff;
+    background-color: #000;
+    border-bottom: 1px solid #444;
     padding: 10px;
     display: flex;
     align-items: center;
 }
 
 .image:nth-child(1) {
-    background-image: url(../assets/img/price.png);
+    background-image: url(../assets/img/digital.png);
 } 
 
 .image:nth-child(2) {
-    background-image: url(../assets/img/project6.png);
+    background-image: url(../assets/img/bolada.png);
 } 
 
 .image:nth-child(3) {
-    background-image: url(../assets/img/systemstatus.png);
+    background-image: url(../assets/img/aprova.png);
 } 
-
-.image:nth-child(4) {
-    background-image: url(../assets/img/cinemax.png);
-}
-
-.image:nth-child(5) {
-    background-image: url(../assets/img/Annotation2.png);
-}
-
 
 /*  */
 .controller {
