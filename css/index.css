@@ -14,13 +14,15 @@
 }
 
 :root { 
-    --myGreen: #2bccb1;
+    /* --myGreen: #2bccb1; */
+    --myGreen: #FF1744;
     --body-color: rgb(20, 20, 20);
     --primary-border: #444 ;
     --primary-black: #000;
     --radius-1: 2px;
     /* --my-purple: #ff00cc; */
     --my-purple: #FF1744;
+    --primary-opac: #ff17455e;
 }
  
 body {
@@ -64,7 +66,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #2bccb18f;
+    background: var(--primary-opac);
     border-radius: 5px;
 }
 
@@ -141,7 +143,7 @@ a {
 }
 
 .header nav a:nth-child(1) {
-    border-bottom-color: #2bccb1;
+    border-bottom-color: var(--myGreen);
 }
 
 .header nav a i {
@@ -382,7 +384,7 @@ footer {
 
 footer .footer {
     position: relative;
-    border-top: 1px solid var(--primary-border);
+    background-color: rgba(0, 0, 0, 0.37);
 }
 
 .footer .title strong {
@@ -426,7 +428,7 @@ footer .footer {
     margin: 20px 0;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     padding: 7px 12px;
-    background: #2bccb11a;
+    background: var(--primary-opac);
     display: block;
 }
 
@@ -440,6 +442,7 @@ footer .footer {
 
     .header nav {
         margin-top: 10px;
+        display: none;
     }
 
     .header nav a {
@@ -505,8 +508,8 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #2bccb1;
-    border: 1px solid #2bccb1;
+    background: var(--myGreen);
+    border: 1px solid var(--myGreen);
     color: #000;
     cursor: pointer;
     transition: all .5s ease;
@@ -514,7 +517,7 @@ button {
 
 button:hover {
     background: #000;
-    color: #2bccb1;
+    color: var(--myGreen);
 }
 
 button i {
