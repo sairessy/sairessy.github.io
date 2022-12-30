@@ -58,7 +58,7 @@ a {
 
 /*  */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -67,7 +67,7 @@ a {
 
 ::-webkit-scrollbar-thumb {
     background: var(--primary-opac);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
